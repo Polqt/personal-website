@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=NTR&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -30,12 +31,19 @@ section {
     width: 100%;
 }
 
+.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .header {
     width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 0 10px 0;
+    margin: 1rem auto;
 }
 
 .header .link {
@@ -56,18 +64,13 @@ hr {
     margin: 0 auto;
 }
 
-.first-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .profile {
+    height: 500px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 3.5rem auto;
+    margin: 4rem auto;
+    text-align: center;
 }
 
 .profile img {
@@ -99,21 +102,96 @@ hr {
 }
 
 .profile button {
+    margin-top: 2rem;
     padding: 12px 30px;
     border: 2px solid transparent;
     outline: none;
     color: #EEEEEE;
     background-color: rgba(100, 100, 100, 0.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     border-radius: 2rem;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
-.profile button:hover {
-    color: #EEEEEE;
-    background-color: rgba(75, 75, 75, 0.3);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
-    transform: scale(1.05);
+.second {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.second .content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px; 
+}
+
+.second .context {
+    padding: 2rem;
+    border: 2px solid transparent;
+    background-color: rgba(100, 100, 100, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 2rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.context h2 {
+    font-size: 36px;
+    font-family: "Asap", sans-serif;
+    margin-bottom: 20px;
+}
+
+.context p {
+    letter-spacing: 0.8px;
+    line-height: 2rem;
+}
+
+.context p a {
+    text-decoration: none !important;
+    color: #76ABAE;
+}
+
+
+.second .skills {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    max-width: 800px;
+    gap: 2rem;
+}
+
+.second .skill-set {
+    background-color: rgba(100, 100, 100, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+}
+
+.second .skill-set h3 {
+    font-size: 24px;
+    font-family: "Asap", sans-serif;
+    margin-bottom: 1rem;
+    min-height: 2.5rem;
+}
+
+.second .skills ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.second .skills li {
+    margin: 0.2rem 0;
 }
