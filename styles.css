@@ -116,6 +116,7 @@ hr {
 }
 
 .second {
+    background-color: #31363F;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -148,6 +149,7 @@ hr {
 .context h2 {
     font-size: 36px;
     font-family: "Asap", sans-serif;
+    color: #76ABAE;
     margin-bottom: 20px;
 }
 
@@ -181,12 +183,14 @@ hr {
 
 .second .skill-set h3 {
     font-size: 24px;
+    color: #76ABAE;
     font-family: "Asap", sans-serif;
     margin-bottom: 1rem;
     min-height: 2.5rem;
 }
 
 .second .skills ul {
+    color: #EEEEEE;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -194,4 +198,62 @@ hr {
 
 .second .skills li {
     margin: 0.2rem 0;
+}
+
+.third {
+    background-color: #76ABAE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    flex-direction: column;
+    color: #222831;
+}
+
+.top-header h1 {
+    font-family: "Asap", sans-serif;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #222831;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.work-set {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-set:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.work-set h3 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.work-set img {
+    width: auto;
+    height: auto;
+    max-height: 175px;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.work-set p {
+    font-size: 12px;
 }
